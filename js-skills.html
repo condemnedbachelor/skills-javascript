@@ -163,11 +163,13 @@
   var button = getElementById("prevent-form-submission-button");
 
   function alertBox(evt) {
-    evt.preventDefault();
+    event.preventDefault();
     alert("Just an Alert, Please!");
   }
 
 button.addEventListener("click", alertBox);
+
+// I think I'm close on this one, but it's still submitting.
 
 </script>
 
@@ -240,6 +242,12 @@ button.addEventListener("click", reverseString);
 
 <script>
   // code here for above problem
+  var button = getElementsByTagName('input');
+  function alertBox(evt) {
+    alert("I didn't change the HTML ;)");
+  }
+button.addEventListener("click", alertBox);
+
 </script>
 
 <div class="hint">
