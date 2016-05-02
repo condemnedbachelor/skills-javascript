@@ -313,10 +313,10 @@ $('#kittenz-rule').dblclick(function () {
 <script>
   // put your code here
   
-  $(".make-a-porcupine").click(
-    function porcUpine() {
-    $(".cute-porcupine-image").slideUp();
-    setTimeout(porcUpine, 1000);
+  $("#make-a-porcupine").click(
+    function porcUpine(evt) {
+    
+    setTimeout("$('#cute-porcupine-image').slideUp();", 1000);
   });
 
 </script>
