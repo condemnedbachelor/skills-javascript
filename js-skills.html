@@ -158,9 +158,9 @@
 
 <script>
   // code here for above problem
-  var form = getElementById("prevent-form-submission-form");
-  var field = getElementById("favorite-color-field");
-  var button = getElementById("prevent-form-submission-button");
+  var form = document.getElementById("prevent-form-submission-form");
+  var field = document.getElementById("favorite-color-field");
+  var button = document.getElementById("prevent-form-submission-button");
 
   function alertBox(event) {
     event.preventDefault();
@@ -276,7 +276,7 @@ button.addEventListener("click", reverseString);
 <script>
   // put your code Here
 $('#kittenz-rule').dblclick(function () {
-     .attr('src','http://www.lovethispic.com/uploaded_images/37623-Cute-Dog.jpg');
+     // .attr('src','http://www.lovethispic.com/uploaded_images/37623-Cute-Dog.jpg');
   });
 </script>
 
@@ -312,7 +312,13 @@ $('#kittenz-rule').dblclick(function () {
 
 <script>
   // put your code here
-  $(".cute-porcupine-image").slideUp();
+  
+  $(".make-a-porcupine").click(
+    function porcUpine() {
+    $(".cute-porcupine-image").slideUp();
+    setTimeout(porcUpine, 1000);
+  });
+
 </script>
 
 <div class="hint">
@@ -392,7 +398,7 @@ $('#kittenz-rule').dblclick(function () {
     Math.random();
     Math.floor(Math.random() * 100)
     Math.floor(Math.random() * 100) + 1;
-  }
+  });
 </script>
 
 <div class="hint">
