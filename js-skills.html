@@ -167,7 +167,7 @@
     alert("Just an Alert, Please!");
   }
 
-button.addEventListener("click", alertBox);
+  button.addEventListener("click", alertBox);
 
 // I think I'm close on this one, but it's still submitting.
 
@@ -243,11 +243,10 @@ button.addEventListener("click", reverseString);
 
 <script>
   // code here for above problem
-  var button = $('.tricky-to-find')
-  function alertBox(evt) {
+  $('.tricky-to-find').click( function() {
     alert("I didn't change the HTML ;)");
-  }
-  button.addEventListener("click", alertBox);
+  });
+
 
 </script>
 
