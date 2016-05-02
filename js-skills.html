@@ -162,7 +162,7 @@
   var field = getElementById("favorite-color-field");
   var button = getElementById("prevent-form-submission-button");
 
-  function alertBox(evt) {
+  function alertBox(event) {
     event.preventDefault();
     alert("Just an Alert, Please!");
   }
@@ -276,10 +276,13 @@ button.addEventListener("click", reverseString);
 
 <script>
   // put your code here
-  $('#kittenz-rule').dblclick(function() {
-    ("http://www.lovethispic.com/uploaded_images/37623-Cute-Dog.jpg").attr("src");
-  })
+var pic = $('#kittenz-rule');
+  function dogPic() { 
+    pic.attr('http://www.lovethispic.com/uploaded_images/37623-Cute-Dog.jpg');} 
+
+    pic.dblclick();
 </script>
+
 
 <div class="hint">
   <div>
