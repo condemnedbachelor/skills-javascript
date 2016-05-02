@@ -230,6 +230,7 @@ button.addEventListener("click", reverseString);
 <p>We didn't include jQuery in this document, though&mdash;so your first task is to include it!</p>
 
 
+<script src="https://code.jquery.com/jquery.js"></script>
 
 <h3>Finding the Button</h3>
 <p>
@@ -242,11 +243,11 @@ button.addEventListener("click", reverseString);
 
 <script>
   // code here for above problem
-  var button = getElementsByTagName('input');
+  var button = $('.tricky-to-find')
   function alertBox(evt) {
     alert("I didn't change the HTML ;)");
   }
-button.addEventListener("click", alertBox);
+  button.addEventListener("click", alertBox);
 
 </script>
 
@@ -275,6 +276,9 @@ button.addEventListener("click", alertBox);
 
 <script>
   // put your code here
+  $('#kittenz-rule').dblclick(function() {
+    ("http://www.lovethispic.com/uploaded_images/37623-Cute-Dog.jpg").attr("src");
+  })
 </script>
 
 <div class="hint">
@@ -493,6 +497,5 @@ button.addEventListener("click", alertBox);
 </script>
 
 
-<!-- <script src="js-skills.js"></script> -->
 </body>
 </html>
